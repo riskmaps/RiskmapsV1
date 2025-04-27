@@ -25,12 +25,9 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-1jheooi9y5hkz=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '31b5-181-237-77-210.ngrok-free.app', 'Riskmaps.onrender.com']
-# Application definition
-CSRF_TRUSTED_ORIGINS = [
-    'https://Riskmaps.onrender.com',
-    'https://31b5-181-237-77-210.ngrok-free.app',
-]
+ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', 'RiskmapsV1.onrender.com').split(',')# Application definition
+
+CSRF_TRUSTED_ORIGINS = os.environ.get('DJANGO_CSRF_TRUSTED_ORIGINS', 'https://RiskmapsV1.onrender.com').split(',')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
