@@ -1,0 +1,48 @@
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info
+.python-version
+
+# Entorno virtual
+venv/
+env/
+.venv/
+
+# Archivos de configuración local (podrías tener archivos específicos para tu máquina)
+local_settings.py
+.env  # Si usas dotenv para variables locales
+
+# Archivos de log
+*.log
+
+# Archivos temporales y de sistema operativo
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Archivos de caché
+*.cache
+.pytest_cache/
+htmlcov/
+
+# Archivos específicos de IDEs (si usas alguno)
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Carpeta de archivos estáticos recolectados (¡Importante NO ignorar esta!)
+# staticfiles/
+
+# Media local (si no estás usando un servicio de almacenamiento en la nube)
+media_local/
+
+# Otros archivos o carpetas que no quieras subir
+# ejemplo_carpeta_privada/
+# archivo_secreto.txt
+
+# ¡IMPORTANTE! No ignorar el archivo de la base de datos SQLite
+# db.sqlite3
